@@ -9,7 +9,7 @@ import jakarta.persistence.Table;
 @Table(name = "employee")
 @NamedQuery(
     name = "Employee.getSummary",
-    query = "SELECT new com.example.EmployeeSummary(e.id, e.name, e.department) FROM Employee e"
+    query = "SELECT new com.example.pr.EmployeeSummary(e.id, e.name, e.department) FROM Employee e"
 )
 public class Employee {
   @Id
